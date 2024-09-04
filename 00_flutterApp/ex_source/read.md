@@ -9,3 +9,6 @@
     ▶ 예제
     - 공식 : https://github.com/decodingbook/Flutter-Dev
     - 저자 : https://github.com/flutterwithyou/flutterwithyou-app
+
+    ▶ 플러터 vscode 설정
+    참고 : https://blog.naver.com/PostView.nhn?blogId=chandong83&logNo=221839261430

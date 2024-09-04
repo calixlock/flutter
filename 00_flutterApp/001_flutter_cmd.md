@@ -1,0 +1,21 @@
+### Flutter CMD
+
+- `flutter doctor`
+  - 플러터 개발환경이 설치되었는지 확인
+- `flutter create <package_name>`
+  - 현재 경로에 `<package_name>`의 폴더가 생성됨
+- `flutter pub get`
+  - 플러터 패키지가 의존하는 패키지들 모두 다운로드
+    - `pubspec.yaml`에 명시된 의존성들 기준
+- `flutter pub add <package_name>`
+  - 플러터 패키지에 `<package_name>`의 새로운 의존성 추가
+  - - `pubspec.yaml`에 의존성 추가
+- `flutter run`
+  - 플러터 프로그램 실행
+    - 실행 디바이스 숫자 입력 후 실행
+- `flutter build <build_cmd>`
+  - 플러터 프로그램을 특정한 플랫폼에 맞게 빌드
+- `flutter test`
+  - 해당 패키지에 존재하는 테스트 코드 실행
+- `flutter upgrade`
+  - 현재 설치된 플러터 SDK의 최신ㅂ 버전이 존재한다면 최신버전으로 업그레이드
