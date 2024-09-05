@@ -13,6 +13,13 @@ class _ListScreenState extends State<ListScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Daily Cats"),
+        actions: [
+          // IconButton(onPressed: onPressed, icon: icon)
+          IconButton(
+            icon: const Icon(Icons.camera_alt),
+            onPressed: () {},
+          )
+        ],
       ),
     );
   }
