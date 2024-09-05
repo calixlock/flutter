@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/cat.dart';
+import '../screens/detail_screen.dart';
 
 final List<Cat> cats = [
   Cat(
@@ -85,7 +86,13 @@ class _ListScreenState extends State<ListScreen> {
             itemCount: cats.length,
             itemBuilder: (_, int index) => GestureDetector(
                   // 상세 화면 이동
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => DetailScreen(
+                        cat: cats[index],
+                      ),
+                    ));
+                  },
                   child: Image.asset(
                     cats[index].link,
                     fit: BoxFit.cover,
