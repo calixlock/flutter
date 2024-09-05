@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../models/cat.dart';
 
-final List<String> replies = [];
+final List<String> replies = [
+  "저 근엄한 눈빛",
+  "어느 별에서 왔니",
+  "충성할뿐.",
+  "날 가져요.",
+  "오히려 좋아",
+  "꺽이지 않는 마음"
+];
 
 class DetailScreen extends StatefulWidget {
   final Cat cat;
