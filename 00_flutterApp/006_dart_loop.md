@@ -1,3 +1,22 @@
+### loop
+
+- for
+
+  - for(int i=0; i<10; i++) {...}
+  - for(int i in numList) {...}
+
+- while
+
+  - while{...}
+  - do{...} while{...}
+
+- switch
+
+  - case
+
+- break
+- continue
+
 ```dart
 // for loop
 void method001() {
