@@ -1,6 +1,6 @@
 ```dart
 // for loop
-void main() {
+void method001() {
   int num = 3;
   for(int i = 1;i<=num;i++){
       print("하"*(2*i-1));
@@ -10,7 +10,7 @@ void main() {
 
 ```dart
 // while loop
-void main() {
+void method002() {
   int num = 3;
   int i = 1;
   while (true) {
@@ -24,7 +24,7 @@ void main() {
 ```
 
 ```dart
-void main() {
+void method003() {
   int num = 3;
   int i = 1;
   while (i <= num) {
@@ -32,8 +32,4 @@ void main() {
     i++;
   }
 }
-```
-
-```
-
 ```
