@@ -28,6 +28,14 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  int _counter = 0; // _ : private / 내부에서만 사용되어야함
+  // 버튼이 눌렸을 때 상태를 업데이트하는 함수
+  void _incrementCounter() {
+    setState(() {
+      _counter++; // setState 안에서 상태를 변경해야 UI에 반영됨
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,9 +52,14 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('you have pushed the button this many times.'),
-            Text('Counter', style: Theme.of(context).textTheme.displaySmall)
+            Text('$_counter', style: Theme.of(context).textTheme.displaySmall)
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter, //
+        tooltip: "counter increment", //도움말
+        child: Icon(Icons.add), // 아이콘 첨부
       ),
     );
   }
