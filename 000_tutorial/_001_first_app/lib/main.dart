@@ -36,29 +36,38 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  // 카운터 초기화 함수
+  void _resetCounter() {
+    setState(() {
+      _counter = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // backgroundColor: Colors.blue[1000],
-        title: Text(widget.title,
-            style: TextStyle(
-              color: Colors.white, // 제목의 글자 색 설정
-              fontSize: 20,
-            )),
-      ),
+          // backgroundColor: Colors.blue[1000],
+          title: Text(
+        widget.title,
+      )),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text('you have pushed the button this many times.'),
-            Text('$_counter', style: Theme.of(context).textTheme.displaySmall)
+            Text('$_counter', style: Theme.of(context).textTheme.displaySmall),
+            SizedBox(height: 20), // 여백 추가
+            ElevatedButton(
+              onPressed: _resetCounter,
+              child: Text('Reset Counter'),
+            ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter, //
-        tooltip: "counter increment", //도움말
+        tooltip: "increment counter", //도움말
         child: Icon(Icons.add), // 아이콘 첨부
       ),
     );
