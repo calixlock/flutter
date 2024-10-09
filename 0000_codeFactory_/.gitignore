@@ -43,6 +43,5 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# 
-
-**/git_codefactory/
+# ignore codeFactory git files
+/git_codefactory/
