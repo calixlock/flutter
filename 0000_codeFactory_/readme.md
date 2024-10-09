@@ -7,7 +7,7 @@
 
 [codeFactory git link](https://github.com/codefactory-co)
 
-### test 환경
+### :star: version
 
 - flutter 3.24.1
 - dart 3.5.1
