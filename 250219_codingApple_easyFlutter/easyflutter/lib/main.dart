@@ -11,12 +11,30 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
-      // appBar: AppBar(),
-      body: Container(
-        child: Icon(Icons.star),
+      home: Scaffold(
+        // appBar: AppBar(),
+        body: Container(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Icon(Icons.star),
+                  Icon(Icons.star),
+                  Icon(Icons.star)
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(Icons.star),
+                  Icon(Icons.star),
+                  Icon(Icons.star)
+                ],
+              ),
+            ],
+          ),
+        ),
+        // bottomNavigationBar: BottomAppBar(child: Text('바텀')),
       ),
-      // bottomNavigationBar: BottomAppBar(child: Text('바텀')),
-    ));
+    );
   }
 }
