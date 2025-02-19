@@ -10,6 +10,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+        home: Scaffold(
+      // appBar: AppBar(),
+      body: Container(
+        child: Icon(Icons.star),
+      ),
+      // bottomNavigationBar: BottomAppBar(child: Text('바텀')),
+    ));
   }
 }
