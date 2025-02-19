@@ -12,25 +12,25 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-      appBar: AppBar(
-        title: Text("AppBar"),
-      ),
-      body: Column(children: [
-        Text("data"),
-      ]),
-      bottomNavigationBar: BottomAppBar(
-        child: SizedBox(
-          height: 100,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Icon(Icons.phone),
-              Icon(Icons.message),
-              Icon(Icons.contact_page),
-            ],
-          ),
-        ),
-      ),
-    ));
+            appBar: AppBar(
+              title: Text("AppBar"),
+            ),
+            body: Align(
+              alignment: Alignment.bottomCenter,
+              child: Container(
+                // width: 50,
+                width: double.infinity,
+                height: 50,
+
+                // margin: EdgeInsets.all(20),
+                // margin: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                // padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.black),
+                  color: Colors.blue,
+                ),
+                child: Text("data"),
+              ),
+            )));
   }
 }
