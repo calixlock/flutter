@@ -13,17 +13,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         // appBar: AppBar(),
+
         body: Container(
           child: Column(
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(Icons.star),
                   Icon(Icons.star),
                   Icon(Icons.star)
                 ],
               ),
-              Row(
+              Column(
+                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                // crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Icon(Icons.star),
                   Icon(Icons.star),
