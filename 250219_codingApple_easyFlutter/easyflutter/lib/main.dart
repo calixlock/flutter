@@ -11,34 +11,26 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        // appBar: AppBar(),
-
-        body: Container(
-          child: Column(
+        home: Scaffold(
+      appBar: AppBar(
+        title: Text("AppBar"),
+      ),
+      body: Column(children: [
+        Text("data"),
+      ]),
+      bottomNavigationBar: BottomAppBar(
+        child: SizedBox(
+          height: 100,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(Icons.star),
-                  Icon(Icons.star),
-                  Icon(Icons.star)
-                ],
-              ),
-              Column(
-                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                // crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Icon(Icons.star),
-                  Icon(Icons.star),
-                  Icon(Icons.star)
-                ],
-              ),
+              Icon(Icons.phone),
+              Icon(Icons.message),
+              Icon(Icons.contact_page),
             ],
           ),
         ),
-        // bottomNavigationBar: BottomAppBar(child: Text('바텀')),
       ),
-    );
+    ));
   }
 }
