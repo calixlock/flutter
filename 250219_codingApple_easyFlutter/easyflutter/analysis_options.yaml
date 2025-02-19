@@ -21,7 +21,7 @@ linter:
   # `// ignore_for_file: name_of_lint` syntax on the line or in the file
   # producing the lint.
   rules:
-    # const 와 같은 문법 선호 지적 제거
+    # 변경 불가능한 객체 생성시 const 문법 선호 지적 제거
     prefer_const_literals_to_create_immutables: 0 # 0== false
 
 
