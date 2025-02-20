@@ -12,20 +12,32 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            appBar: AppBar(),
-            body: Row(children: [
-              Flexible(
-                child: Container(color: Colors.blue),
-                flex: 1,
-              ),
-              Flexible(
-                child: Container(color: Colors.red),
-                flex: 1,
-              ),
-              // flex 1 가진 flexible 박스
-              Expanded(
-                child: Container(color: Colors.green),
-              ),
-            ])));
+            appBar: AppBar(
+              backgroundColor: Color.fromARGB(100, 100, 100, 50),
+            ),
+            body: Container(
+                height: 150,
+                padding: EdgeInsets.all(10),
+                child: Row(children: [
+                  Image.asset('assets/images/canon_eosr8.png', width: 150),
+                  Container(
+                    width: 70%,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text('canon eosr8'),
+                        Text('금호동 3가'),
+                        Text('7,000원'),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Icon(Icons.favorite),
+                            Text('4'),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ]))));
   }
 }
