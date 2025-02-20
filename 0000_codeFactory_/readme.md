@@ -5,9 +5,18 @@
 
 ### :star: git code
 
-[codeFactory git link](https://github.com/codefactory-co)
+- [codeFactory git link](https://github.com/codefactory-co)
 
 ### :star: version
 
 - flutter 3.24.1
 - dart 3.5.1
+- android studio 2024.1
+
+### :star:
+
+- [dartpad](http://dartpad.dev)
+
+### :star:
+
+-

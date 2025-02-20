@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 20), // 여백 추가
             ElevatedButton(
               onPressed: _resetCounter,
-              child: Text('Reset Counter'),
+              child: Text('Reset Counter!'),
             ),
           ],
         ),
